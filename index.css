@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url(background.jpg) repeat repeat fixed;
+  background-size: cover;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.FlashyTitle0 {
+  animation: colorAnimation0 2s ease-in-out infinite;
+}
+
+.FlashyTitle1 {
+  animation: colorAnimation1 2s ease-in-out infinite;
+}
+
+.Image {
+  display: inline-block;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgba(0,0,0,.5);
+}
+
+#title {
+  font-size: 50px;
+  color: white;
+  padding: 50px;
+  border-radius: 5px;
+  background: #2f2f2f;
+  box-shadow: 5px 5px 10px 5px rgba(0,0,0,.5);
+}
+
+#imageOfSami {
+  border: 10px solid gold;
+}
+
+#imageOfJulius {
+  border: 10px solid cyan;
+}
+
+@keyframes colorAnimation0 {
+  0% {
+    color: green;
+  }
+  30% {
+    color: gold;
+  }
+  60% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+
+@keyframes colorAnimation1 {
+  0% {
+    color: purple;
+  }
+  30% {
+    color: orange;
+  }
+  60% {
+    color: cyan;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+

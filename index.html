@@ -1,0 +1,42 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mun ja Samin nettisivu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+</head>
+<body>
+  <h1 id="title">Samin ja Juliuksen kaverisivu</h1>
+  <div class="ImageContainer">
+    <img class="Image" id="imageOfSami" src="./sami.jpg" />
+    <img class="Image" id="imageOfJulius" src="./julius.jpg" />
+  </div>
+  <script type="text/javascript">
+    (function(){
+      const title = document.getElementById('title');
+      const imageOfSami = document.getElementById('imageOfSami');
+      const imageOfJulius = document.getElementById('imageOfJulius');
+
+      imageOfSami.addEventListener('mouseover', () => {
+        title.classList.add('FlashyTitle0');
+      });
+
+      // FIXME: Mulla on tässä Sami joku virhe jonka takia tää hoveri ei toimi
+      imageOfJulius.addEventListener('click', () => {
+        title.classList.add('FlashyTitle1');
+      });
+
+      imageOfSami.addEventListener('mouseleave', () => {
+        title.classList.remove('FlashyTitle0');
+      });
+
+      imageOfJulius.addEventListener('mouseleave', () => {
+        title.classList.remove('FlashyTitle1');
+      });
+
+    })();
+  </script>
+</body>
+</html>
