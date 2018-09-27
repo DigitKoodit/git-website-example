@@ -23,8 +23,8 @@ $ git init
 # Lisää .gitignore ja valitsemasi tiedostot .gitignore -tiedostoon
 $ touch .gitignore
 
-# Steitsaa tiedostot committia varten
-$ git add {tiedostojen_nimet}
+# Valmistele tiedostot committia varten
+$ git add tiedosto1.txt tiedosto2.js tiedosto3.java # . lisää kaikki
 
 # Luo git commit
 $ git commit -m "Fiksu viesti"
