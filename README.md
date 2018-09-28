@@ -36,7 +36,7 @@ $ git log # Pois pääsee kirjoittamalla :q, VIMin hyödyllisin komento
 $ git remote -v
 
 # Aseta itsellesi remote
-$ git add origin https://github.com/github_tilisi/github-reposi.git
+$ git remote add origin https://github.com/github_tilisi/github-reposi.git
 
 # Tsekkaa taas remote
 $ git remote -v
